@@ -1,9 +1,12 @@
 package springtest.springtest.entity;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
 
 @Entity
 public class Address {
+	@Id
 	private int id;
 	private String city;
 	private String state;

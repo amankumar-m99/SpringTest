@@ -7,11 +7,13 @@ import springtest.springtest.entity.Person;
 public interface PersonService {
 	List<Person> getAllPersons();
 
-	Person getPerson(int id);
+	Person getPerson(String id);
 
-	Person addPeson(Person person);
+	Person addPerson(Person person);
 
-	Person updateEmployee(Person person);
+	Person updatePerson(Person person);
 
-	void deletePerson(int id);
+	void deletePerson(Person person);
+
+	void deletePerson(String id);
 }
